@@ -1,0 +1,12 @@
+{
+	"items": [
+		{
+		"name": "Syncthing",
+		"priority": 0,
+		"items": [
+			{"name": "Start Syncthing", "priority": 1, "action": "/mnt/us/extensions/syncthing/bin/syncthing -home=/mnt/us/extensions/syncthing/config"},
+			{"name": "Stop Syncthing", "priority": 2, "action": "kill -9 `pidof syncthing`"}
+		  ]
+		}
+	]
+}
