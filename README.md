@@ -26,5 +26,5 @@ Setup Syncthing on Kindle Touch
   <gui enabled="true" tls="false">
      <address>0.0.0.0:8080</address>
 ```
-9\. Find out your Kindle IP address by type `;711` in search, then open `http://IP-ADDRESS:8080` in your browser.
+9\. Find out your Kindle IP address by type `;711` in search, then open `http://IP-ADDRESS:8080` in your browser. <br>
 10\. Ignore kindle auto generated index files: `*.sdr`
