@@ -6,7 +6,7 @@ Setup Syncthing on Kindle Touch
 3. Download [syncthing-linux-arm](https://github.com/syncthing/syncthing/releases) and copy `syncthing` binary to `syncthing/bin/`
 4. Connect Kindle Touch to Your PC
 5. Copy `syncthing/` to `KINDLE-ROOT/extensions/syncthing/`
-6. SSH into your Kindle
+6. [SSH into your Kindle](http://www.mobileread.com/forums/showthread.php?t=186645)
 7. Open [firewall ports](https://github.com/syncthing/syncthing/wiki/Firewalls-and-Port-Forwards#local-firewall)
 
 ```
@@ -26,9 +26,5 @@ Setup Syncthing on Kindle Touch
   <gui enabled="true" tls="false">
      <address>0.0.0.0:8080</address>
 ```
-9\. Ignore kindle auto generated index files on SYNC-FOLDER
-
-```
-$ edit SYNC-FOLDER/.stignore on both device, or use a global ignore file
-  *.sdr
-```
+9\. Find out your Kindle IP address by type `;711` in search, then open `http://IP-ADDRESS:8080` in your browser.
+10\. Ignore kindle auto generated index files: `*.sdr`
