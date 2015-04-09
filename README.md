@@ -5,8 +5,8 @@ Setup Syncthing on Kindle Touch
 2. Download this [repository](https://github.com/gutenye/syncthing-kindle/archive/master.zip)
 3. Download [syncthing-linux-arm](https://github.com/syncthing/syncthing/releases) and copy `syncthing` binary to `syncthing/bin/`
 4. Connect Kindle Touch to Your PC
-5. copy `syncthing/` to `KINDLE-ROOT/extensions/syncthing/`
-6. ssh into your kindle
+5. Copy `syncthing/` to `KINDLE-ROOT/extensions/syncthing/`
+6. SSH into your Kindle
 7. Open [firewall ports](https://github.com/syncthing/syncthing/wiki/Firewalls-and-Port-Forwards#local-firewall)
 
 ```
@@ -16,7 +16,7 @@ Setup Syncthing on Kindle Touch
   -A INPUT -p tcp --dport 22000 -j ACCEPT
   -A INPUT -p udp --dport 21025 -j ACCEPT
 # iptables-restore < /etc/sysconfig/iptables.rules
-# mnroot ro
+# mntroot ro
 ```
 8\. Start syncthing for the first time, and enable [access the web GUI from other computers](https://github.com/syncthing/syncthing/wiki/Firewalls-and-Port-Forwards#remote-web-gui)
 
