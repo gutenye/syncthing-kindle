@@ -1,11 +1,11 @@
-Syncthing on Kindle Touch
+Setup Syncthing on Kindle Touch
 ==========================
 
 1. You need jailbreak and [KULA](http://www.mobileread.com/forums/showthread.php?t=203326) first.
 2. Download this [repository](https://github.com/gutenye/syncthing-kindle/archive/master.zip)
-3. Download [syncthing-linux-arm](https://github.com/syncthing/syncthing/releases) and copy `syncthing` binary to `bin/`
+3. Download [syncthing-linux-arm](https://github.com/syncthing/syncthing/releases) and copy `syncthing` binary to `syncthing/bin/`
 4. Connect Kindle Touch to Your PC
-5. copy the folder to KINDLE-ROOT/extensions/syncthing
+5. copy `syncthing/` to `KINDLE-ROOT/extensions/syncthing/`
 6. ssh into your kindle
 7. Open [firewall ports](https://github.com/syncthing/syncthing/wiki/Firewalls-and-Port-Forwards#local-firewall)
 
