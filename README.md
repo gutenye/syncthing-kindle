@@ -15,7 +15,7 @@ Setup Syncthing on Kindle Touch
   -A INPUT -p tcp --dport 8080 -j ACCEPT
   -A INPUT -p tcp --dport 22000 -j ACCEPT
   -A INPUT -p udp --dport 21025 -j ACCEPT
-# iptables-restore < /etc/sysconfig/iptables.rules
+# iptables-restore < /etc/sysconfig/iptables
 # mntroot ro
 ```
 8\. Start syncthing for the first time, and enable [access the web GUI from other computers](https://github.com/syncthing/syncthing/wiki/Firewalls-and-Port-Forwards#remote-web-gui)
