@@ -11,7 +11,7 @@ Setup Syncthing on Kindle Touch
 
 ```
 # mntroot rw
-# edit /etc/sysconfig/iptables
+# vi /etc/sysconfig/iptables
   -A INPUT -p tcp --dport 8080 -j ACCEPT
   -A INPUT -p tcp --dport 22000 -j ACCEPT
   -A INPUT -p udp --dport 21025 -j ACCEPT
@@ -22,7 +22,7 @@ Setup Syncthing on Kindle Touch
 
 ```
 # /mnt/us/extensions/syncthing/bin/syncthing -home=/mnt/us/extensions/syncthing/config
-# edit /mnt/us/extensions/syncthing/config/config.xml
+# vi /mnt/us/extensions/syncthing/config/config.xml
   <gui enabled="true" tls="false">
      <address>0.0.0.0:8080</address>
 ```
