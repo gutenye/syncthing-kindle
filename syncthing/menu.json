@@ -6,7 +6,9 @@
 		"items": [
 			{"name": "Start Syncthing", "priority": 1, "action": "/mnt/us/extensions/syncthing/bin/syncthing -home=/mnt/us/extensions/syncthing/config &>/mnt/us/syncthing.log"},
 			{"name": "Stop Syncthing", "priority": 2, "action": "killall syncthing"},
-			{"name": "Restart Syncthing", "priority": 3, "action": "killall syncthing; /mnt/us/extensions/syncthing/bin/syncthing -home=/mnt/us/extensions/syncthing/config &> /mnt/us/syncthing.log"}
+			{"name": "Restart Syncthing", "priority": 3, "action": "killall syncthing; /mnt/us/extensions/syncthing/bin/syncthing -home=/mnt/us/extensions/syncthing/config &> /mnt/us/syncthing.log"},
+			{"name": "Open Firewall for Syncthing", "priority": 4, "action": "iptables -A INPUT -i wlan0 -p tcp --dport 8080 -j ACCEPT; iptables -A INPUT -i wlan0 -p tcp --dport 22000 -j ACCEPT; iptables -A INPUT -i wlan0 -p tcp --dport 21025 -j ACCEPT; "},
+			{"name": "Start Syncthing INSECURE Admin", "priority": 5, "action": "/mnt/us/extensions/syncthing/bin/syncthing -home=/mnt/us/extensions/syncthing/config -gui-address 'http://0.0.0.0:8080' -no-restart &>/mnt/us/syncthing.log"}
 		  ]
 		}
 	]
